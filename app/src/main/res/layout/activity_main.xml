@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="361dp"
+        android:layout_height="39dp"
+        android:text="Menjumlahkan 2 Buah Bilangan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20dp"
+        tools:text="Menjumlahkan 2 Buah Bilangan" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Masukkan Bilangan Pertama"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Masukkan Bilangan Kedua"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="175dp"
+        android:layout_below="@+id/bilpertama"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:id="@+id/bilpertama"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView2"/>
+
+    <EditText
+        android:id="@+id/bilkedua"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView3"/>
+
+    <Button
+        android:id="@+id/btnhasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Bilangan"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/bilkedua" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Hasil Penjualan"
+        android:layout_below="@+id/btnhasil"
+        android:layout_marginLeft="155dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:id="@+id/hasil"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="180dp"
+        android:layout_below="@+id/textView4"/>
+
+
+</RelativeLayout>
